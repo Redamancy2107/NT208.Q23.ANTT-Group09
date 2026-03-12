@@ -11,10 +11,10 @@ foreach ($cart as $item) {
     $subtotal += $products[$item['sku']]['price'] * $item['qty'];
 }
 
-$discountPercent = 10;
+$discountPercent = 0.1; // <--- 10 -> 10%
 $discountValue = $subtotal * $discountPercent;
-$shippingFee = $subtotal >= 50 ? 5 : 0;
-$vat = $subtotal * 0.1;
+$shippingFee = $subtotal >= 50 ? 0 : 5; // <--- larger order = free
+$vat = ($subtotal - $discountValue + $shippingFee) * 0.1; // <-- wrong way to calculate VAT
 $grandTotal = $subtotal - $discountValue + $shippingFee + $vat;
 ?>
 
