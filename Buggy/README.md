@@ -1,6 +1,6 @@
-# Type shit
+# Group 9 fixes
 
-## logic error
+## Logic error
 
 ### Wrong way to calculate discount percent
 
