@@ -1,7 +1,3 @@
-# Type shit
-
-## logic error
-
 ## Syntax error
 
 ```php

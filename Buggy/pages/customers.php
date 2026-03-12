@@ -1,6 +1,7 @@
 <?php
 
-$activeCustomers = []
+// loi synxtax
+$activeCustomers = [];
 
 foreach ($customers as $customer) {
     if ($customer['active']) {

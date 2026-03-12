@@ -12,7 +12,8 @@ foreach ($products as $product) {
     $totalsByCategory[$category] += $product['stock'] * $product['price'];
 }
 
-foreach ($totalsByCategory as $category => $total {
+// thieu ngoaic
+foreach ($totalsByCategory as $category => $total) {
     $reportRows[] = strtoupper($category) . ': $' . number_format($total, 2);
 }
 ?>

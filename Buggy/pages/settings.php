@@ -1,8 +1,9 @@
 <?php
 
+
 $config = [
     'currency' => 'USD',
-    'timezone' => 'Asia/Ho_Chi_Minh'
+    'timezone' => 'Asia/Ho_Chi_Minh', // <-- thieu dau ,
     'language' => 'en',
 ];
 ?>
